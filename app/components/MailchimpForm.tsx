@@ -51,7 +51,7 @@ const MailchimpForm: React.FC = () => {
                             <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
                         </div>
                         <div aria-hidden="true" style={{position: "absolute", left: "-5000px"}}>
-                            /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                            {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
                             <input type="text" name="b_80f0c83ad0a5d3fee30bec9c6_459d9a0f3c" tabIndex={-1} readOnly />
                         </div>
                         <div className="optionalParent">
