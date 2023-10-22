@@ -31,9 +31,7 @@ Coming soon.
 
 More information on our Code of Conduct can be found [here](/docs/code_of_conduct.md).
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
+## Additional Resources
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
