@@ -21,11 +21,11 @@ const VideoCover: React.FC<VideoCoverProps> = (props) => {
 
     if (!isVideoVisible) {
         return (
-            <div className="p-8 w-full h-[278px] sm:w-[521px] xl:w-[701px] xl:h-[395px]" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', position: 'relative' }}>
+            <div className="relative flex flex-wrap content-between p-8 w-full h-[278px] sm:w-[521px] xl:w-[701px] xl:h-[395px] bg-cover" style={{ backgroundImage: `url(${backgroundImage})`}}>
                 {children}
 
-                <div className="text-center" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-                    <button className="mb-4 transition ease-in-out hover:scale-110" onClick={onClick}>
+                <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                    <button className="transition ease-in-out hover:scale-110" onClick={onClick}>
                         <Image
                             alt="Play video"
                             className="w-14 h-14 xl:w-24 xl:h-24"
@@ -35,8 +35,11 @@ const VideoCover: React.FC<VideoCoverProps> = (props) => {
                             width={92}
                         />
                     </button>
-                    {playButtonText && <p className="text-base">{playButtonText}</p>}
                 </div>
+
+                {playButtonText && 
+                    <p className="w-full text-center">{playButtonText}</p>
+                }
             </div>
         )
     } else {

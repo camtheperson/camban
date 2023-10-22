@@ -24,7 +24,7 @@ export default function Home() {
                         >
                             <Image
                                 alt="Camban"
-                                className="block mx-auto w-52 lg:w-64"
+                                className="self-start block mx-auto w-52 lg:w-64"
                                 height={56}
                                 priority
                                 src="/camban-logo.svg"
